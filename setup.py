@@ -1,7 +1,7 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
-    name="print_effect",
+    name="k_utils",
     version="0.1",
-    py_modules=["print_effect"],
+    packages=find_packages(),
 )
