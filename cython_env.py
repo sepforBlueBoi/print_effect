@@ -26,6 +26,13 @@ setup(
     with open("setup.py", "w") as f:
         f.write(setup_content)
         
-    print("it has been finished. you are good to go")
-    print("to compile just do 'python setup.py build_ext --inplace'")
-    print("if your on linux you may need to enter the venv via source to compile.")
+    print("writing compile script...")
+        
+    compile_script = """python setup.py built_ext --inplace"""
+
+    with open("compile.sh", "w") as f:
+        f.write(compile_script)
+        
+    print("It has been finished. you are good to go")
+    print("To compile chmod the compile script, and run in the venv via the source command.")
+    print("If you're on windows you will probably need to use the python script diractly")
